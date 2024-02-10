@@ -9,6 +9,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Router } from 'react-router-dom';
 import PostDetails from './views/PostDetails';
+import PostList from './views/PostList';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path:"/post/:id",
     element: <PostDetails/>
+  },
+  {
+    path:"/postlist",
+    element: <PostList/>
   }
 ]);
 
